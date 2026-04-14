@@ -3,4 +3,4 @@ configMap:
 deployment:
   replicas: 1
   imageName: "annurukulasekhar/catalogue"
-  iageVersion: "1.4.0"
+  imageVersion: "1.4.0"
