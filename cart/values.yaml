@@ -1,0 +1,7 @@
+connfigMap:
+  REDIS_HOST: "redis"
+  CATALOGUE_HOST: "catalogue"
+deployment:
+  replicas: 1
+  imageName: "annurukulasekhar/cart"
+  imageVersion: "1.4.0"
