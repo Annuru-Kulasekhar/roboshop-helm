@@ -8,6 +8,6 @@ metadata:
     tier: backend
     component: user
 data:
-  MONGO: true
+  MONGO: "true"
   REDIS_URL: {{ .Values.configMap.REDIS_URL }}
   MONGO_URL: {{ .Values.configMap.MONGO_URL }}
