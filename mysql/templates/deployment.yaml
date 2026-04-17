@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  namespace: roboshop
+  labels:
+    project: robosho
+    tier: db
+    component: mysql
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      project: roboshop
+      tier: db
+      component: mysql
+  template:
+    metadata:
+      labels:
+        project: roboshop
+        tier: db
+        component: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: {{ .Values.deployment.imageName }}:{{ .Values.deployment.imageVersion }}
+      envFrom:
+      - secretRef:
+          name: mysql

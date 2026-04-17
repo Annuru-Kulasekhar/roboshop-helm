@@ -1,0 +1,6 @@
+secret:
+  MYSQL_ROOT_PASSWORD: "Um9ib1Nob3BAMQ=="
+deployment:
+  replicas: 1
+  imageName: annurukulasekhar/mysql
+  imageVersion: "1.4.0"
